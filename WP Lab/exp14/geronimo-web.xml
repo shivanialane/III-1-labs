@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<web-app xmlns="http://geronimo.apache.org/xml/ns/j2ee/web-1.1"> 
+<dep:environment xmlns:dep="http://geronimo.apache.org/xml/ns/deployment-1.1"> 
+<dep:moduleId> 
+<dep:groupId>org.apache.geronimo.samples.jws</dep:groupId> 
+<dep:artifactId>Calculator</dep:artifactId> 
+<dep:version>1.0</dep:version> 
+<dep:type>car</dep:type> 
+</dep:moduleId> 
+<dep:dependencies> 
+</dep:dependencies> 
+</dep:environment> 
+<context-root>/jaxws-calculator-1.0</context-root> 
+<service-ref> 
+<service-ref-name>services/Calculator</service-ref-name> 
+<port> 
+<port-name>CalculatorPort</port-name> 
+<protocol>http</protocol> 
+<host>localhost</host> 
+<port>8080</port> 
+<uri>/jaxws-calculator/calculator</uri> 
+</port> 
+</service-ref> 
+</web-app>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+
+
